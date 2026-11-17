@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="cs"><head><meta charset="utf-8"><title>Výletník – rezervace</title>
+<link rel="stylesheet" href="styl.css"><script src="data.js"></script></head><body>
+<header><h1><a href="index.html">Výletník</a></h1>
+<nav><a href="index.html">Ubytování</a><a href="vylety.html">Tipy na výlety</a></nav></header>
+<h2 id="nadpis">Rezervace</h2>
+<form action="potvrzeni.html" method="get" data-potvrdit="ano">
+  <input type="hidden" name="id" id="id">
+  <label for="jmeno">Jméno a příjmení</label><input id="jmeno" name="jmeno">
+  <label for="email">E-mail</label><input id="email" name="email" type="email">
+  <br><button type="submit" data-potvrdit="ano">Závazně rezervovat</button>
+</form>
+<script>
+  const u = UBYTOVANI.find(x => x.id === Number(parametr("id")));
+  document.getElementById("id").value = u.id;
+  document.getElementById("nadpis").textContent = "Rezervace: " + u.nazev;
+</script>
+</body></html>

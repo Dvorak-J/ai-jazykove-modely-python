@@ -1,0 +1,29 @@
+<!-- Windows Sandbox pro pokusy s agenty.
+     Spuštění: dvojklik na tento soubor. Po zavření okna se vše smaže.
+     Cesty v HostFolder upravte podle svého počítače. -->
+<Configuration>
+  <Networking>Enable</Networking>
+  <VGpu>Disable</VGpu>
+  <ClipboardRedirection>Disable</ClipboardRedirection>
+  <PrinterRedirection>Disable</PrinterRedirection>
+  <AudioInput>Disable</AudioInput>
+  <VideoInput>Disable</VideoInput>
+  <MemoryInMB>4096</MemoryInMB>
+  <MappedFolders>
+    <!-- pracovní složka agenta: jediné místo, kam smí zapisovat -->
+    <MappedFolder>
+      <HostFolder>C:\Agent\piskoviste</HostFolder>
+      <SandboxFolder>C:\Users\WDAGUtilityAccount\Desktop\piskoviste</SandboxFolder>
+      <ReadOnly>false</ReadOnly>
+    </MappedFolder>
+    <!-- instalační soubory (Python, programy z učebnice) jen pro čtení -->
+    <MappedFolder>
+      <HostFolder>C:\Agent\instalace</HostFolder>
+      <SandboxFolder>C:\Users\WDAGUtilityAccount\Desktop\instalace</SandboxFolder>
+      <ReadOnly>true</ReadOnly>
+    </MappedFolder>
+  </MappedFolders>
+  <LogonCommand>
+    <Command>explorer.exe C:\Users\WDAGUtilityAccount\Desktop</Command>
+  </LogonCommand>
+</Configuration>

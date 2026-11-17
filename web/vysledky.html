@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="cs"><head><meta charset="utf-8"><title>Výletník – výsledky hledání</title>
+<link rel="stylesheet" href="styl.css"><script src="data.js"></script></head><body>
+<header><h1><a href="index.html">Výletník</a></h1>
+<nav><a href="index.html">Ubytování</a><a href="vylety.html">Tipy na výlety</a></nav></header>
+<h2 id="nadpis">Výsledky hledání</h2>
+<div id="seznam"></div>
+<script>
+  const misto = parametr("misto") || "", osob = Number(parametr("osob") || 1);
+  const cena = Number(parametr("cena") || 1e9), noci = Number(parametr("noci") || 1);
+  const nalezene = UBYTOVANI.filter(u => (!misto || u.misto === misto) && u.osob >= osob && u.cena <= cena);
+  document.getElementById("nadpis").textContent =
+    `${misto || "Všechna místa"}: nalezeno ${nalezene.length} ubytování`;
+  document.getElementById("seznam").innerHTML = nalezene.map(u => `
+    <div class="karta"><h2><a href="detail.html?id=${u.id}&noci=${noci}&osob=${osob}">${u.nazev}</a></h2>
+    <p>${u.misto}, ${u.centrum.toLocaleString("cs")} km od centra · hodnocení ${u.hodnoceni.toLocaleString("cs")} / 5</p>
+    <p><span class="cena">${u.cena.toLocaleString("cs")} Kč</span> za noc,
+       celkem ${(u.cena * noci).toLocaleString("cs")} Kč za ${noci} ${noci === 1 ? "noc" : noci < 5 ? "noci" : "nocí"}</p>
+    </div>`).join("")
+    || "<p>Nic nenalezeno. Zkuste změnit podmínky.</p>";
+</script>
+</body></html>

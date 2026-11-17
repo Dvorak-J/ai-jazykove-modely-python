@@ -1,0 +1,15 @@
+Ráno jdu do školy. Ve škole se učíme programovat. Programovat mě baví, protože počítač dělá přesně to, co mu řeknu.
+Náš učitel říká, že programovat se naučí každý, kdo vydrží. Dnes jsme psali program, který počítá známky.
+Program počítal dobře, ale jedna známka chyběla. Učitel se usmál a řekl, že chyba je v cyklu.
+Po škole jdu domů a doma mě čeká kočka. Kočka je líná a spí na topení. Když přijdu domů, kočka se protáhne a jde ke misce.
+Kočka má ráda ticho, ale robot v mém pokoji dělá hluk. Robota jsem postavil sám a naprogramoval ho v Pythonu.
+Robot jezdí po pokoji a hledá kočku. Kočka se robota bojí a schová se pod postel.
+V Pythonu se programuje dobře, protože kód je čitelný. Ve škole píšeme kód v Pythonu i v C#.
+Jazykový model je program, který hádá další slovo. Jazykový model se učí z textu a text je všude.
+Když má model hodně textu, hádá další slovo docela dobře. Když má model málo textu, píše nesmysly.
+Náš model je malý a zná jen tento text. Proto někdy píše věty, které nedávají smysl.
+Dnes večer budu programovat robota, aby kočku nehledal. Kočka bude ráda a robot bude jezdit jen po chodbě.
+Zítra jdu do školy a učitel nám řekne, jak funguje umělá inteligence. Umělá inteligence se učí z dat.
+Data jsou pro umělou inteligenci jako jídlo pro kočku. Bez dat se model nic nenaučí.
+Učitel říká, že dobrý program je jednoduchý. Jednoduchý program se dobře čte a dobře opravuje.
+Večer jdu spát a kočka spí se mnou. Robot stojí v rohu a čeká na ráno.

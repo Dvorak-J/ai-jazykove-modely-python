@@ -1,0 +1,16 @@
+LABORATOŘ KLINICKÉ BIOCHEMIE (smyšlená ukázka pro výuku)
+Pacient: Jan Ukázkový          Datum odběru: 22. 9. 2026, 7:35
+Materiál: srážlivá krev, nalačno
+
+Vyšetření                    Výsledek   Jednotka   Referenční meze
+S-25-OH vitamin D               71      nmol/l     75 - 250       L
+S-Ferritin                      28      µg/l       30 - 400       L
+S-Železo                        11,6    µmol/l     5,8 - 34,5
+S-Vitamin B12                   236     pmol/l     145 - 569
+S-TSH                           2,35    mIU/l      0,27 - 4,20
+S-Glukóza                       5,0     mmol/l     3,9 - 5,6
+S-Cholesterol celkový           5,2     mmol/l     2,9 - 5,0      H
+S-Hořčík                        0,81    mmol/l     0,66 - 1,07
+
+L = pod referenčními mezemi, H = nad referenčními mezemi
+Výsledky interpretuje ošetřující lékař.

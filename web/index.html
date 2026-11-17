@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="cs"><head><meta charset="utf-8"><title>Výletník – hledání ubytování</title>
+<link rel="stylesheet" href="styl.css"></head><body>
+<header><h1><a href="index.html">Výletník</a></h1>
+<nav><a href="index.html">Ubytování</a><a href="vylety.html">Tipy na výlety</a></nav></header>
+<p class="pozn">Ukázkový web pro výuku. Všechna ubytování jsou smyšlená a nic se skutečně nerezervuje.</p>
+<h2>Najděte ubytování</h2>
+<form action="vysledky.html" method="get">
+  <label for="misto">Místo</label>
+  <select id="misto" name="misto">
+    <option value="">vyberte místo</option><option>Mikulov</option><option>Lednice</option><option>Telč</option>
+  </select>
+  <label for="prijezd">Příjezd</label><input id="prijezd" name="prijezd" type="date">
+  <label for="noci">Počet nocí</label><input id="noci" name="noci" type="number" min="1" value="1">
+  <label for="osob">Počet osob</label><input id="osob" name="osob" type="number" min="1" value="2">
+  <label for="cena">Nejvyšší cena za noc (Kč)</label><input id="cena" name="cena" type="number" placeholder="např. 2000">
+  <br><button type="submit">Hledat</button>
+</form>
+</body></html>
